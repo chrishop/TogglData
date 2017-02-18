@@ -1,1 +1,0 @@
-This is just testing the git adds and them commits to the repository correctly
