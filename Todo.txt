@@ -14,3 +14,4 @@ day_view
     it will then return emtpy values , let it
     sum the values in each list
     use matplotplib to plot this graph
+    #push
