@@ -7,7 +7,9 @@ c=conn.cursor()
 def CreateTable():
     c.execute("CREATE TABLE IF NOT EXISTS TogglTable("
               "Project TEXT,"
-              "Description TEXT,"
+              "TimeEstimate TEXT,"
+              "SubTask TEXT,"
+              "Task TEXT,"
               "StartDate TEXT,"
               "StartTime TEXT,"
               "EndDate TEXT,"

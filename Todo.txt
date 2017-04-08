@@ -1,0 +1,16 @@
+day_view
+    find first date
+    find last date
+    find difference between dates
+        generates all dates inbetween
+            work out how many times to run the loop
+                get that if statment working
+            which months have 31 or 30 days
+                31 days Jan, Mar, May, Jul, Aug, Oct, Dec
+                30 days Feb, April , June, september ,November
+            how to tell if its a leap year
+                if it evenly divides by 4 AND ( divides by 100 OR divides by 400)
+    input those into the "for i in dates" bit
+    it will then return emtpy values , let it
+    sum the values in each list
+    use matplotplib to plot this graph
