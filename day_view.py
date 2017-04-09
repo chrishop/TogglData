@@ -118,10 +118,16 @@ def sum_duration(data):
             mins = total_mins % 60
             hours = total_hours + int(total_mins / 60)
 
-    return hours*60 + mins
+    return hours + mins/60
+
+
+def plot_chart(arr):
+    t = np.arange(0,len(arr)-1,1)
+    plt.plot(arr)
+    plt.show()
 
 
 
-print(get_hours_day())
+plot_chart(get_hours_day())
 
 
