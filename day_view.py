@@ -6,6 +6,7 @@ conn = sqlite3.connect("Toggl.db")
 c = conn.cursor()
 
 def get_hours_day():
+    """adds up the hours work in a day and puts it in an array"""
     #select first  startdate and the laststart date
     c.execute("SELECT StartDate FROM TogglTable")
     data = c.fetchall()
@@ -26,6 +27,8 @@ def get_hours_day():
     return sum_array
 
 def gen_dates():
+    """dates in which no work is done wont show in the database
+     so dates between the first and last date are generated"""
     # select first  startdate and the laststart date
     c.execute("SELECT StartDate FROM TogglTable")
     data = c.fetchall()
@@ -96,6 +99,7 @@ def gen_dates():
     return date_arr
 
 def sum_duration(data):
+    """ adds up the amount of work done each day"""
     total_hours = 0
     total_mins = 0
     total_seconds = 0
